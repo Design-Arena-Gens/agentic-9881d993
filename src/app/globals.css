@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --aurora-bg: #020617;
+  --aurora-text: #f8fafc;
+}
+
+body {
+  color: var(--aurora-text);
+  background: radial-gradient(circle at 20% 20%, rgba(16, 185, 129, 0.14), transparent 55%),
+    radial-gradient(circle at 80% 0%, rgba(168, 85, 247, 0.12), transparent 45%),
+    var(--aurora-bg);
+  font-feature-settings: "ss01", "ss03";
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
